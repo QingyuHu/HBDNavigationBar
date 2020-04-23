@@ -56,6 +56,9 @@
     if (CGRectEqualToRect(view.bounds, CGRectZero)) {
         return nil;
     }
+    if (view.bounds.size.width == 0 || view.bounds.size.height == 0) {
+        return nil;
+    }
     
     return view;
 }
